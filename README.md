@@ -8,3 +8,11 @@ This python_script is for use in HomeAssistant
 
 # thermostat_offset
 Set the offset for eurotronics spirit zwave thermostat
+
+the spirit can be use a external sensor. poor, that there is no sensor on market what is working :-(
+
+furthermore i gor no information when it should be delivered
+
+Now, with this script i set the offset of the thermostat with the data of an external temperature sensor.
+
+that can be any sensor on the market :-)
