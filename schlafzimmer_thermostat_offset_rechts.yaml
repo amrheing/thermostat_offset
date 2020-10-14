@@ -1,0 +1,14 @@
+- id: 'schlafzimmer_thermostat_offset_rechts'
+  alias: Schlafzimmer Thermostat Offset rechts
+  description: ''
+  trigger:
+  - platform: time_pattern
+    hours: /1
+  condition: []
+  action:
+  - service: python_script.thermostat_offset
+    data:
+      climate_entity: climate.thermostat_schlafzimmer_rechts
+      external_sensor: sensor.multisensor_schlafzimmer_temperature
+      current_offset: input_number.sz_current_offset_rechts
+  mode: single
